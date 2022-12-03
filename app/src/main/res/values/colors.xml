@@ -10,5 +10,6 @@
     <color name="buttons_bg">#F4F4F4</color>
     <color name="button_bg">#F0F0F1</color>
     <color name="red">#d0787d</color>
+    <color name="red_200">#F1AFB3</color>
     <color name="green">#16b399</color>
 </resources>

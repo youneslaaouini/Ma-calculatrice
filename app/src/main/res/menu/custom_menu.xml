@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_calculator"
+        android:title="@string/calculator_title"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/calculator"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/nav_currency"
+        android:title="@string/currency_converter_title"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/currency"/>
+
+    <item
+        android:id="@+id/nav_length"
+        android:title="@string/length_converter_title"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/length"/>
+
+    <item
+        android:id="@+id/nav_temperature"
+        android:title="@string/temperature_converter_title"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/temperature"/>
+
+    <item
+        android:id="@+id/nav_date"
+        android:title="@string/date_converter_title"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/calendar"/>
+</menu>
