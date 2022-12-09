@@ -163,14 +163,15 @@ public class CalculatorFragment extends Fragment {
         Button button = (Button) view.findViewById(R.id.equal);
 
         button.setOnClickListener(view -> {
-            calculateResult();
-
-            displayResultAndOperation();
 
             try{
                 DBHandler db = new DBHandler(this.getContext());
 
-                Operation operation = new Operation(-1, number1, number2, operator, result);
+                String savedNumber1 = number1, savedNumber2 = number2, savedOperator = operator;
+
+                calculateResult();
+
+                Operation operation = new Operation(-1, savedNumber1, savedNumber2, savedOperator, result);
 
                 long id = db.insertOperation(operation);
 
@@ -179,6 +180,8 @@ public class CalculatorFragment extends Fragment {
                 }
             }catch (Exception exception){
 
+            }finally {
+                displayResultAndOperation();
             }
 
         });
